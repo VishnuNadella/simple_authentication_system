@@ -1,8 +1,8 @@
 import streamlit as st
 from pymongo import *
 
-usn = "tle_hack_admin"
-pwd = "tle_hack_ffs007"
+usn = 
+pwd = 
 connection = f"mongodb+srv://{usn}:{pwd}@cluster0.vzd4elr.mongodb.net/?retryWrites=true&w=majority"
 cluster = MongoClient(connection)
 
