@@ -1,8 +1,8 @@
 import streamlit as st
 from pymongo import *
 
-usn = 
-pwd = 
+usn = st.secrets["DB_USN"]
+pwd = st.secrets["DB_PWD"]
 connection = f"mongodb+srv://{usn}:{pwd}@cluster0.vzd4elr.mongodb.net/?retryWrites=true&w=majority"
 cluster = MongoClient(connection)
 
